@@ -24,6 +24,7 @@ let theme = createTheme({
     error: {
       main: '#FF5D5D',
       light: '#FCECE6',
+      hover: '#FDE8E0',
       contrastText: '#fff',
     },
     success: {
@@ -34,11 +35,16 @@ let theme = createTheme({
     warning: {
       main: '#FFA726',
       light: '#FFF5D2',
+      text: '#B28C09',
       contrastText: '#fff',
     },
     background: {
       default: '#F8F8F8',
     },
+    // action: {
+    //   disabledBackground: 'rgba(51, 51, 51, 0.25)',
+    //   disabled: 'rgba(51, 51, 51, 0.25)',
+    // },
   },
 });
 
