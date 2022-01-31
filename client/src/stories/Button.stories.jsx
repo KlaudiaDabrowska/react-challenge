@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Button } from '../ui';
 import { Grid, Typography } from '@mui/material';
+import AddIcon from '@mui/icons-material/Add';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -45,7 +47,7 @@ const All = () => (
       <Grid item xs={12} sx={{ mb: 2 }}>
         <Typography variant={'subheading'}>Contained</Typography>
       </Grid>
-      <Button variant={'contained'} color={'primary'}>
+      <Button variant={'contained'} color={'primary'} disableRipple>
         Button
       </Button>
       <Button variant={'contained'} color={'error'}>
@@ -72,6 +74,58 @@ const All = () => (
         Button
       </Button>
       <Button variant={'outlined'} color={'warning'}>
+        Button
+      </Button>
+    </Grid>
+
+    <Grid container sx={{ mt: 5 }}>
+      <Grid item xs={12} sx={{ mb: 2 }}>
+        <Typography variant={'subheading'}>Contained With Icons</Typography>
+      </Grid>
+      <Button
+        variant={'contained'}
+        color={'primary'}
+        endIcon={<ChevronRightIcon />}
+      >
+        Button
+      </Button>
+      <Button
+        variant={'contained'}
+        color={'error'}
+        endIcon={<ChevronRightIcon />}
+      >
+        Button
+      </Button>
+      <Button
+        variant={'contained'}
+        color={'success'}
+        endIcon={<ChevronRightIcon />}
+      >
+        Button
+      </Button>
+      <Button
+        variant={'contained'}
+        color={'warning'}
+        endIcon={<ChevronRightIcon />}
+      >
+        Button
+      </Button>
+    </Grid>
+
+    <Grid container sx={{ mt: 5 }}>
+      <Grid item xs={12} sx={{ mb: 2 }}>
+        <Typography variant={'subheading'}>Contained With Icons</Typography>
+      </Grid>
+      <Button variant={'outlined'} color={'primary'} startIcon={<AddIcon />}>
+        Button
+      </Button>
+      <Button variant={'outlined'} color={'error'} startIcon={<AddIcon />}>
+        Button
+      </Button>
+      <Button variant={'outlined'} color={'success'} startIcon={<AddIcon />}>
+        Button
+      </Button>
+      <Button variant={'outlined'} color={'warning'} startIcon={<AddIcon />}>
         Button
       </Button>
     </Grid>
